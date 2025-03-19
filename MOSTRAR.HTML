@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Garagem Inteligente</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="telaPrincipal">
+        <h1>Garagem Inteligente</h1>
+        <h2>Selecione um Veículo</h2>
+        <button id="irParaCarro">Carro Normal</button>
+        <button id="irParaEsportivo">Carro Esportivo</button>
+        <button id="irParaCaminhao">Caminhão</button>
+    </div>
+
+    <div id="telaCarro" class="telaVeiculo" style="display: none;">
+        <button id="voltarParaGaragemCarro" class="voltar">Garagem</button>
+        <h2>Carro Normal</h2>
+        <img id="imgCarro" class="veiculo-imagem" src="img/images.jpg" alt="Carro">
+        <p>Informações: <span id="infoCarro"></span></p>
+        <button id="ligarCarro">Ligar</button>
+        <button id="desligarCarro">Desligar</button>
+        <button id="acelerarCarro">Acelerar</button>
+        <button id="buzinarCarro">Buzinar</button>
+    </div>
+
+    <div id="telaEsportivo" class="telaVeiculo" style="display: none;">
+        <button id="voltarParaGaragemEsportivo" class="voltar">Garagem</button>
+        <h2>Carro Esportivo</h2>
+        <img id="imgEsportivo" class="veiculo-imagem" src="img/png-transparent-ford-gt-shelby-mustang-california-special-mustang-2018-ford-mustang-gt-premium-ford-car-performance-car-vehicle.png" alt="Carro Esportivo">
+        <p>Informações: <span id="infoEsportivo"></span></p>
+        <button id="ligarEsportivo">Ligar</button>
+        <button id="desligarEsportivo">Desligar</button>
+        <button id="acelerarEsportivo">Acelerar</button>
+        <button id="buzinarEsportivo">Buzinar</button>
+        <button id="ativarTurbo">Ativar Turbo</button>
+        <button id="desativarTurbo">Desativar Turbo</button>
+    </div>
+
+    <div id="telaCaminhao" class="telaVeiculo" style="display: none;">
+        <button id="voltarParaGaragemCaminhao" class="voltar">Garagem</button>
+        <h2>Caminhão</h2>
+        <img id="imgCaminhao" class="veiculo-imagem" src="img/images (1).jpg" alt="Caminhão">
+        <p>Informações: <span id="infoCaminhao"></span></p>
+        <button id="ligarCaminhao">Ligar</button>
+        <button id="desligarCaminhao">Desligar</button>
+        <button id="acelerarCaminhao">Acelerar</button>
+        <button id="buzinarCaminhao">Buzinar</button>
+        <button id="carregarCaminhao">Carregar</button>
+        <input type="number" id="pesoCarga" placeholder="Peso da Carga">
+    </div>
+
+    <script src="garagem.js"></script>
+</body>
+</html>
